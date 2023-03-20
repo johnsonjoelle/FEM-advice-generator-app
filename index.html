@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+
   <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body>
 
-  <main class="advice-container">
-    <div class="advice-content">
-      <p class="advice-header">Advice #<span id="advice-id"><!-- Advice ID goes here --></span></p>
-      <p class="advice-text" id="advice-text">
+  <main class="advice">
+    <div class="advice__content">
+      <p class="advice__header">Advice #<span id="advice-id"><!-- Advice ID goes here --></span></p>
+      <p class="advice__text" id="advice-text">
         <!-- Advice text goes here -->
       </p>
-      <div class="advice-divider"></div>
+      <div class="advice__divider">
+        <!-- <img src="" alt="" sizes="" srcset=""> -->
+      </div>
     </div>
-    <div class="advice-icon">
+    <div class="advice__icon">
       <img src="./images/icon-dice.svg" alt="Generate Advice" id="dice">
     </div>
   </main>
