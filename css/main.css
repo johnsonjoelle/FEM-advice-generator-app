@@ -25,14 +25,22 @@ body {
 .advice .advice__content {
   background-color: hsl(217, 19%, 24%);
   border-radius: 14px;
-  padding: 1.5em 1em;
+  padding: 1.5rem 1rem 2rem;
 }
 .advice .advice__header {
   color: hsl(150, 100%, 66%);
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 0.5em;
-  margin-bottom: 1em;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+.advice .advice__divider {
+  height: 16px;
+  width: 100%;
+  background-image: url(../images/pattern-divider-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1.5rem 0;
 }
 .advice .advice__icon {
   background-color: hsl(150, 100%, 66%);
@@ -45,6 +53,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: -30px;
+  transition: all 350ms;
+  cursor: pointer;
+}
+.advice .advice__icon:hover {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
 
 .attribution {
@@ -57,4 +70,10 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 540px) {
+  .advice .advice__content {
+    box-shadow: 2rem 2rem 1rem hsl(218, 23%, 14%);
+  }
 }/*# sourceMappingURL=main.css.map */
